@@ -2,13 +2,15 @@
 
 by [Eddy Verbruggen](http://www.x-services.nl), for PhoneGap >= 3.0.0
 
+
 > **PhoneGap Build review team, please read this!**
 >
 > On Build it is not possible to specify a minimal iOS version, but it is possible to set this in the .plist.
 > This plugins sets the correct value based on the setting in config.xml.
 > I am not sure whether or not during creation of the .ipa the plugin setting is used, so
 > please test it and reject this plugin in case it doesn't work.
-the above comment will be removed after approval.
+> _This comment will be removed by me after approval._
+
 
 1. [Description](https://github.com/EddyVerbruggen/iOSMinVersion-PhoneGapBuild-Plugin#1-description)
 2. [Installation](https://github.com/EddyVerbruggen/iOSMinVersion-PhoneGapBuild-Plugin#2-installation)
