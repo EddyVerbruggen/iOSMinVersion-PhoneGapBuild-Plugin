@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="nl.x-services.plugins.ipadlandscapeenabler"
+        version="3.0">
+
+  <name>iPad Landscape Enabler</name>
+
+  <description>
+    If you want landscape and portrait enabled on iPad, but only portrait on iPhone/iPod, then you've come to the right place.
+    Add this plugin and set orientation to portrait, this plugin will add landscape orientation for iPad only.
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <platform name="ios">
+    <config-file target="*-Info.plist" parent="UISupportedInterfaceOrientations~ipad">
+      <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+      </array>
+    </config-file>
+  </platform>
+
+</plugin>
