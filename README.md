@@ -6,9 +6,11 @@ by [Eddy Verbruggen](http://www.x-services.nl), for PhoneGap >= 3.0.0
 > **PhoneGap Build review team, please read this!**
 >
 > On Build it is not possible to specify a minimal iOS version, but it is possible to set this in the .plist.
-> This plugins sets the correct value based on the setting in config.xml.
-> I am not sure whether or not during creation of the .ipa the plugin setting is used, so
-> please check whether or not the resulting .ipad has the correct value for `MinimumOSVersion` and reject this plugin in case it doesn't work.
+> This plugins sets the correct value in the .plist based on the setting in config.xml.
+>
+> I am not sure whether or not during creation of the .ipa the plugin setting is used (the MinimumOSVersion is supposed to be based on the iPhone OS Deployment Target),
+> so please check whether or not the resulting .ipad has the correct value for `MinimumOSVersion` and reject this plugin in case it doesn't work.
+>
 > _This comment will be removed by me after approval._
 
 
@@ -33,6 +35,8 @@ Add this line:
 ```
 
 This makes sure your app is not available for iOS version lower than 7.0.
+
+Don't set it lower than supported by PhoneGap Build (which is 5.0 currently).
 
 ## 3. License
 
